@@ -1,0 +1,11 @@
+﻿{
+  "Group": "Payment methods",
+  "FriendlyName": "Yandex money",
+  "SystemName": "Payments.YandexMoney",
+  "Version": "1.0",
+  "SupportedVersions": [ "4.10" ],
+  "Author": "Andrey Samarin",
+  "DisplayOrder": 1,
+  "FileName": "Nop.Plugin.Payments.YandexMoney.dll",
+  "Description": "This plugin allows paying with Yandex money"
+}

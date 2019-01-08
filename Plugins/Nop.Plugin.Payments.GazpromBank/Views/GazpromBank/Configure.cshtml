@@ -1,0 +1,81 @@
+﻿@model Nop.Plugin.Payments.GazpromBank.Models.ConfigurationModel
+@{
+    Layout = "_ConfigurePlugin";
+}
+<form asp-controller="GazpromBank" asp-action="Configure" method="post">
+    <div class="panel-group">
+        <div class="panel panel-default">
+            <div class="panel-body">
+                <div class="form-group">
+                    <div class="col-md-3">
+                        <nop-label asp-for="DescriptionText" />
+                    </div>
+                    <div class="col-md-9">
+                        <nop-textarea asp-for="DescriptionText" />
+                        <span asp-validation-for="DescriptionText"></span>
+                    </div>
+                </div>
+                <div class="form-group">
+                    <div class="col-md-3">
+                        <nop-label asp-for="MerchantId" />
+                    </div>
+                    <div class="col-md-9">
+                        <nop-editor asp-for="MerchantId" />
+                        <span asp-validation-for="MerchantId"></span>
+                    </div>
+                </div>
+                <div class="form-group">
+                    <div class="col-md-3">
+                        <nop-label asp-for="AccountId" />
+                    </div>
+                    <div class="col-md-9">
+                        <nop-editor asp-for="AccountId" />
+                        <span asp-validation-for="AccountId"></span>
+                    </div>
+                </div>
+                <div class="form-group">
+                    <div class="col-md-3">
+                        <nop-label asp-for="GatewayUrl" />
+                    </div>
+                    <div class="col-md-9">
+                        <nop-editor asp-for="GatewayUrl" />
+                        <span asp-validation-for="GatewayUrl"></span>
+                    </div>
+                </div>
+                <div class="form-group">
+                    <div class="col-md-3">
+                        <nop-label asp-for="AdditionalFee" />
+                    </div>
+                    <div class="col-md-9">
+                        <nop-editor asp-for="AdditionalFee" />
+                        <span asp-validation-for="AdditionalFee"></span>
+                    </div>
+                </div>
+                <div class="form-group">
+                    <div class="col-md-3">
+                        <nop-label asp-for="TestMode" />
+                    </div>
+                    <div class="col-md-9">
+                        <nop-editor asp-for="TestMode" />
+                        <span asp-validation-for="TestMode"></span>
+                    </div>
+                </div>
+                <div class="form-group">
+                    <div class="col-md-3">
+                        <nop-label asp-for="EnableDebugMode" />
+                    </div>
+                    <div class="col-md-9">
+                        <nop-editor asp-for="EnableDebugMode" />
+                        <span asp-validation-for="EnableDebugMode"></span>
+                    </div>
+                </div>
+
+                <div class="form-group">
+                    <div class="col-md-9 col-md-offset-3">
+                        <input type="submit" name="save" class="btn btn-primary" value="@T("Admin.Common.Save")" />
+                    </div>
+                </div>
+            </div>
+        </div>
+    </div>
+</form>
